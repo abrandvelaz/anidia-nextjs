@@ -1,27 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Estilos para el encabezado <h1> */
+h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 28px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px; }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+/* Resto de estilos del formulario */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
